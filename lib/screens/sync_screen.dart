@@ -163,10 +163,10 @@ class _SyncScreenState extends State<SyncScreen> {
                     Container(
                       width: 40, height: 40,
                       decoration: BoxDecoration(
-                        color: Colors.white.withValues(alpha: 0.2),
+                        gradient: AppTheme.primaryGradient,
                         borderRadius: BorderRadius.circular(12),
                       ),
-                      child: const HealthTrackLogo(size: 32),
+                      child: const Icon(Icons.monitor_heart, color: Colors.white, size: 22),
                     ),
                   ],
                 ),

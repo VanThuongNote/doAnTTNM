@@ -213,8 +213,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Column(children: [
                   Row(children: [
                     Container(width: 36, height: 36,
-                      decoration: BoxDecoration(color: Colors.white.withValues(alpha: 0.2), borderRadius: BorderRadius.circular(10)),
-                      child: const HealthTrackLogo(size: 28)),
+                      decoration: BoxDecoration(
+                        gradient: AppTheme.primaryGradient,
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: const Icon(Icons.monitor_heart, color: Colors.white, size: 20)),
                     const SizedBox(width: 10),
                     Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                       const Text('HealthTrack', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: Colors.white)),
