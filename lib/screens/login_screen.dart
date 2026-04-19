@@ -224,7 +224,7 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
                           // Email
                           TextField(
                             controller: _emailController,
-                            style: const TextStyle(color: AppTheme.bgDark, fontSize: 14),
+                            style: const TextStyle(color: Colors.white, fontSize: 14),
                             decoration: const InputDecoration(
                               hintText: 'Email hoặc số điện thoại',
                               prefixIcon: Icon(Icons.email_outlined, color: AppTheme.textMuted, size: 20),
@@ -236,7 +236,7 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
                           TextField(
                             controller: _passwordController,
                             obscureText: _obscurePassword,
-                            style: const TextStyle(color: AppTheme.bgDark, fontSize: 14),
+                            style: const TextStyle(color: Colors.white, fontSize: 14),
                             decoration: InputDecoration(
                               hintText: 'Mật khẩu',
                               prefixIcon: const Icon(Icons.lock_outline, color: AppTheme.textMuted, size: 20),

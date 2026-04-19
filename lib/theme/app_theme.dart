@@ -58,10 +58,17 @@ class AppTheme {
         textStyle: const TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
       ),
     ),
+    textTheme: const TextTheme(
+      titleLarge: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+      titleMedium: TextStyle(color: Colors.white, fontSize: 16),
+      bodyLarge: TextStyle(color: Colors.white, fontSize: 14),
+      bodyMedium: TextStyle(color: Colors.white70, fontSize: 13),
+      labelLarge: TextStyle(color: Colors.white, fontWeight: FontWeight.w600),
+    ),
     textSelectionTheme: const TextSelectionThemeData(
       cursorColor: Colors.white,
-      selectionColor: Color(0x554361EE),
-      selectionHandleColor: primary,
+      selectionColor: Color(0x774361EE),
+      selectionHandleColor: Colors.white,
     ),
     inputDecorationTheme: InputDecorationTheme(
       filled: true,
@@ -79,8 +86,10 @@ class AppTheme {
         borderSide: const BorderSide(color: primary, width: 1.5),
       ),
       contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-      hintStyle: const TextStyle(color: textMuted, fontSize: 14),
-      labelStyle: const TextStyle(color: Colors.white70),
+      hintStyle: const TextStyle(color: Colors.white38, fontSize: 14),
+      labelStyle: const TextStyle(color: Colors.white),
+      prefixStyle: const TextStyle(color: Colors.white),
+      suffixStyle: const TextStyle(color: Colors.white),
     ),
   );
 }

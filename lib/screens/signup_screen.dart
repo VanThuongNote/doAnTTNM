@@ -183,7 +183,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(12),
                                 border: Border.all(color: const Color(0xFFE2E8F0), width: 1.5),
-                                color: AppTheme.cardBg,
+                                color: const Color(0xFF252A5E),
                               ),
                               child: Row(children: [
                                 Container(
@@ -193,7 +193,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                     SizedBox(width: 4),
                                     Icon(Icons.arrow_drop_down, color: AppTheme.textMuted, size: 18),
                                     SizedBox(width: 4),
-                                    Text('+84', style: TextStyle(fontSize: 14, color: AppTheme.bgDark)),
+                                    Text('+84', style: TextStyle(fontSize: 14, color: Colors.white)),
                                   ]),
                                 ),
                                 Container(width: 1, height: 30, color: const Color(0xFFE2E8F0)),
@@ -201,7 +201,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                   child: TextField(
                                     controller: _phoneController,
                                     keyboardType: TextInputType.phone,
-                                    style: const TextStyle(color: AppTheme.bgDark, fontSize: 14),
+                                    style: const TextStyle(color: Colors.white, fontSize: 14),
                                     decoration: const InputDecoration(
                                       hintText: '3456789',
                                       border: InputBorder.none,
@@ -223,7 +223,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             TextField(
                               controller: _passwordController,
                               obscureText: _obscurePassword,
-                              style: const TextStyle(color: AppTheme.bgDark, fontSize: 14),
+                              style: const TextStyle(color: Colors.white, fontSize: 14),
                               decoration: InputDecoration(
                                 hintText: '••••••',
                                 suffixIcon: IconButton(
@@ -286,7 +286,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
         const SizedBox(height: 6),
         TextField(
           controller: controller,
-          style: const TextStyle(color: AppTheme.bgDark, fontSize: 14),
+          style: const TextStyle(color: Colors.white, fontSize: 14),
           decoration: InputDecoration(hintText: hint),
           onChanged: (_) => setState(() => _errorMessage = null),
         ),
