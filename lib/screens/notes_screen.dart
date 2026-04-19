@@ -76,7 +76,7 @@ class _NotesScreenState extends State<NotesScreen> {
                         ),
                       ),
                       const SizedBox(width: 10),
-                      const HealthTrackLogo(size: 28),
+                      Container(width: 36, height: 36, decoration: BoxDecoration(gradient: AppTheme.primaryGradient, borderRadius: BorderRadius.circular(10)), child: const Icon(Icons.monitor_heart, color: Colors.white, size: 20)),
                       const SizedBox(width: 10),
                       const Text('Ghi chú',
                           style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700, color: Colors.white)),
@@ -197,3 +197,4 @@ class _NotesScreenState extends State<NotesScreen> {
     );
   }
 }
+
